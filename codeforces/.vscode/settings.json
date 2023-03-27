@@ -1,0 +1,12 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "xiosbase": "cpp",
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "cmath": "cpp",
+        "random": "cpp"
+    }
+}
