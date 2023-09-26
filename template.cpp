@@ -13,15 +13,16 @@
 #define out cout<<
 #define in cin>>
 #define unsync ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define Loop for(ll i=0; i<n; i++)
+#define Loop(j,n) for(ll j=0; j<n; j++)
 #define Loop1 for(ll i=1; i<=n; i++)
 #define Loop11 for(ll i=1; i<n; i++)
-#define LOOP(n) for(ll i=0; i<n; i++)
-#define yes cout<<"YES\n"
-#define no cout<<"NO\n"
-#define vl vector<long long>
+#define yes "YES\n"
+#define no "NO\n"
+#define vll vector<long long>
 #define pi 2 * acos(0.0)
 #define ld long double
+#define deb(x) cout << #x << "=" << x << e
+#define deb2(x, y) cout << #x << "=" << x << " , " << #y << "=" << y << e
 
 using namespace std;
 int big=1e6+7;
@@ -33,7 +34,49 @@ bool istp(ll);
 void yn(bool);
 int countdigit(long long);
 
+template <typename T> //input vector vin(v);
+void vin(vector<T>& v) {
+    for (auto& it : v)
+        cin >> it;
+}
+
+template <typename T> // output vector vout(v);
+void vout(const vector<T>& v) {
+    for (const auto& it : v)
+        cout << it << " ";
+    cout << endl;
+}
+
+template <typename T, size_t N> //input array ain(a);
+void ain(T (&arr)[N]) {
+    for (size_t i = 0; i < N; i++) {
+        cin >> arr[i];
+    }
+}
+
+template <typename T, size_t N> //output array aout(a);
+void aout(const T (&arr)[N]) {
+    for (size_t i = 0; i < N; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+// Utility functions
+template <typename T>
+void print(T&& t) { cout << t << "\n"; }
+template <typename T, typename... Args>
+void print(T&& t, Args &&...args)
+{
+    cout << t << " ";
+    print(forward<Args>(args)...);
+}
+
+/**-------------------------------------------------------------------**/
+/**-------------------------------------------------------------------**/
 /** -- BISMILLAHIR RAHMANIR RAHIM -- **/
+/**-------------------------------------------------------------------**/
+/**-------------------------------------------------------------------**/
 
 void hereitis(int t)
 {
