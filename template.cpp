@@ -34,33 +34,69 @@ bool istp(ll);
 void yn(bool);
 int countdigit(long long);
 
-template <typename T> //input vector vin(v);
-void vin(vector<T>& v) {
-    for (auto& it : v)
-        cin >> it;
+//template <typename T>
+//istream& operator>>(istream& is, vector<T>& v) {
+//    for (auto& it : v)
+//        is >> it;
+//    return is;
+//}
+//
+//template <typename T>
+//ostream& operator<<(ostream& os, const vector<T>& v) {
+//    for (const auto& it : v)
+//        os << it << " ";
+//    os << endl;
+//    return os;
+//}
+
+//template <typename T, size_t N>
+//istream& operator>>(istream& is, T arr[]) {
+//    for (auto i = 0; i < N; ++i) {
+//        is >> arr[i];
+//    }
+//    return is;
+//}
+
+
+template <typename T>
+ostream& operator<<(ostream& os, const T &arr) {
+    for (size_t i = 0; i<sizeof(arr)/sizeof(T); i++)
+        os << arr[i] << " ";
+    os << endl;
+    return os;
 }
 
-template <typename T> // output vector vout(v);
-void vout(const vector<T>& v) {
-    for (const auto& it : v)
-        cout << it << " ";
-    cout << endl;
-}
 
-template <typename T, size_t N> //input array ain(a);
-void ain(T (&arr)[N]) {
-    for (size_t i = 0; i < N; i++) {
-        cin >> arr[i];
-    }
-}
 
-template <typename T, size_t N> //output array aout(a);
-void aout(const T (&arr)[N]) {
-    for (size_t i = 0; i < N; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
+
+
+//template <typename T> //input vector vin(v);
+//void vin(vector<T>& v) {
+//    for (auto& it : v)
+//        cin >> it;
+//}
+//
+//template <typename T> // output vector vout(v);
+//void vout(const vector<T>& v) {
+//    for (const auto& it : v)
+//        cout << it << " ";
+//    cout << endl;
+//}
+
+//template <typename T, size_t N> //input array ain(a);
+//void ain(T (&arr)[N]) {
+//    for (size_t i = 0; i < N; i++) {
+//        cin >> arr[i];
+//    }
+//}
+//
+//template <typename T, size_t N> //output array aout(a);
+//void aout(const T (&arr)[N]) {
+//    for (size_t i = 0; i < N; i++) {
+//        cout << arr[i] << " ";
+//    }
+//    cout << endl;
+//}
 
 // Utility functions
 template <typename T>
@@ -80,7 +116,11 @@ void print(T&& t, Args &&...args)
 
 void hereitis(int t)
 {
-    
+    ll a[6]={1,2,3,4,5,6};
+    out a;
+
+
+
 }
 
 /// main function
